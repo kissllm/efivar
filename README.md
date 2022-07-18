@@ -23,7 +23,7 @@ There is an ABI tracker for this project at [ABI Laboratory].
 [ABI Laboratory]: https://abi-laboratory.pro/tracker/timeline/efivar/
 
 ## Build
->./build
+>./build "/usr"
 
 ## WARNING
 =======

@@ -12,9 +12,9 @@ mk() {
         mandir=/usr/share/man/ \
         includedir=/usr/include/ \
         "$@"
-}
+    }
 
 export CC="${CC:-cc}"
 
 mk
-mk DESTDIR="$1" install
+doas make DESTDIR="$1" install
