@@ -1,0 +1,20 @@
+#!/bin/sh -e
+
+CC=clang
+CXX=clang++
+LD=/usr/bin/ld.lld
+
+# Avoid repeating ourselves.
+mk() {
+    make \
+        libdir=/usr/lib/ \
+        bindir=/usr/bin/ \
+        mandir=/usr/share/man/ \
+        includedir=/usr/include/ \
+        "$@"
+}
+
+export CC="${CC:-cc}"
+
+mk
+mk DESTDIR="$1" install

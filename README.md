@@ -1,7 +1,7 @@
-efivar
+# efivar
 ======
 
-Tools and libraries to manipulate EFI variables
+## Tools and libraries to manipulate EFI variables
 ---------------------------------------------
 
 This library is free software; you can redistribute it and/or
@@ -22,7 +22,10 @@ There is an ABI tracker for this project at [ABI Laboratory].
 [http://www.gnu.org/licenses/]: http://www.gnu.org/licenses/
 [ABI Laboratory]: https://abi-laboratory.pro/tracker/timeline/efivar/
 
-WARNING
+## Build
+>./build
+
+## WARNING
 =======
 You should probably not run "make a brick" *ever*, unless you're already
 reasonably sure it won't permanently corrupt your firmware.  This is not a
